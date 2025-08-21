@@ -1,0 +1,76 @@
+#main {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 40px;
+  padding: 20px 0;
+}
+#sim-wrapper, #controllers-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+#sim {
+  height: 100%;
+  aspect-ratio: 1 / 1;
+}
+#controllers {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.range-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+.radio-group {
+  padding-top: 20px;
+}
+.range-input {
+  width: 400px;
+  -webkit-appearance: none;
+  appearance: none;
+  height: 20px;
+  background: linear-gradient(to right, blue, white 37.82%, red);
+  outline: none;
+  border-radius: 10px;
+}
+.range-input::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  background: white;
+  border: 2px solid #333;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.range-input::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  background: white;
+  border: 2px solid #333;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.boiling-point-formula-wrapper {
+  position: relative;
+  padding: 6px 0 30px 0;
+}
+#liquid-label {
+  position: absolute;
+  left: calc(37.82% / 2);
+  transform: translateX(-50%);
+  color: blue;
+}
+#boiling-point-forumla {
+  position: absolute;
+  left: 37.82%;
+  transform: translateX(-50%);
+}
+#gas-label {
+  position: absolute;
+  left: calc(100% - (100% - 37.82%) / 2);
+  transform: translateX(-50%);
+  color: red;
+}
