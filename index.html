@@ -18,7 +18,7 @@
         <div id="controllers">
           <div class="range-wrapper" id="temp-range-wrapper">
             <label for="temp-range">Temperature: <span id="temp-value"></span></label>
-            <input type="range" class="range-input" id="temp-range" oninput="updateTemperatureDisplay()" min="0" max="1.5" value="0.25" step="0.01">
+            <input type="range" class="range-input" id="temp-range" oninput="updateTemperatureDisplay()" min="0" max="1.5" value="0.4" step="0.01">
             <div class="boiling-point-formula-wrapper">
               <div id="liquid-label">Liquid</div>
               <div id="gas-label">Gas</div>
@@ -56,6 +56,16 @@
               </label>
             </div>
           </div>
+        </div>
+      </div>
+      <div id="wording-wrapper">
+        <div id="wording">
+          A simulation showing the phase transition of molecules when the temperature is
+          varied around the boiling point.
+
+          Inspired by the <a href="https://www.youtube.com/c/3blue1brown">3blue1brown</a>
+          guest episode on phase transitions by Vilas Winstein, of
+          <a href="https://www.youtube.com/@SpectralCollective">Spectral Collective</a> fame.
         </div>
       </div>
     </div>
