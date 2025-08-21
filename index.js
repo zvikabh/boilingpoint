@@ -1,7 +1,7 @@
 'use strict';
 
 const N = 100; // Grid size (50x50)
-const CELL_SIZE = 5; // Size of each cell in pixels
+const CELL_SIZE = Math.min(6, Math.floor(window.innerWidth / N)); // Size of each cell in pixels
 
 let matrix = [];
 
