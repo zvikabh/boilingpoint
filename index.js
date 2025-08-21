@@ -83,7 +83,7 @@ function update() {
         raise ('Invalid move method: ' + getMoveMethod());
     }
     if (dstX == srcX && dstY == srcY) continue;
-    if (dstX < 0 || dstX >= N || dstY < 0 || dstY > N) continue;
+    if (dstX < 0 || dstX >= N || dstY < 0 || dstY >= N) continue;
     if (!matrix[srcX][srcY]) continue;
     if (matrix[dstX][dstY]) continue;
     // We have a molecule at (srcX,srcY) and want to consider moving it to (dstX,dstY).
